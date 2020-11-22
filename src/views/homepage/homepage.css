@@ -1,0 +1,173 @@
+.homepage {
+    padding: 50px 0;
+}
+.homepage__subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.homepage__items-list-elem:not(:last-child) {
+    margin-bottom: 20px;
+}
+.homepage__items-list-elem {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    padding: 10px;
+}
+.homepage__items-list-elem-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.homepage__items-list-elem-head-toggler {
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid #eee;
+    border-radius: 50%;
+}
+.homepage__items-list-elem-head-toggler_active {
+    transform: rotate(180deg);
+}
+.homepage__items-list-elem-head-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+.homepage__items-list-elem-goods {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
+}
+.homepage__items-list-elem-goods-item {
+    flex: 0 0 100%;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.homepage__items-list-elem-goods-item-inner {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    padding-right: 40px;
+    position: relative;
+}
+.homepage__items-list-elem-goods-item-basket {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-image: url("~@/assets/img/icons/cart_default.svg");
+    -webkit-background-size: 20px;
+    background-size: 20px;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.homepage__items-list-elem-goods-item-basket_active {
+    background-image: url("~@/assets/img/icons/cart_added.svg");
+}
+.homepage__items-list-elem-goods-item-param:not(:last-child) {
+    margin-bottom: 5px;
+}
+.homepage__items-list-elem-goods-item-param-title {
+    font-weight: 600;
+}
+
+
+
+.homepage__cart {
+    padding-top: 50px;
+}
+.homepage__cart-list-wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow-x: auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    padding: 10px;
+}
+.homepage__cart-list {
+    font-size: 13px;
+    width: 100%;
+    min-width: 600px;
+}
+.homepage__cart-list-body-row-cell:last-child {
+    text-align: right;
+}
+.homepage__cart-list-head-row-cell {
+    padding: 5px;
+    border-bottom: 1px solid #eeeeee;
+}
+.homepage__cart-list-body-row-cell {
+    padding: 10px 5px;
+}
+.homepage__cart-list-body-row-cell-remover {
+    padding: 0;
+    background-color: transparent;
+    color: blue;
+    border: none;
+    border-bottom: 1px solid blue;
+}
+.homepage__cart-list-body-row-cell-remover:hover {
+    border-bottom-color: transparent;
+}
+.homepage__cart-list-body-row-cell-input {
+    width: 50px;
+    height: 30px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+.homepage__cart-list-body-row-cell-availability {
+    display: table;
+    padding: 2px;
+    margin-top: 5px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 3px;
+    font-size: 10px;
+}
+.homepage__cart-sum {
+    display: table;
+    margin-left: auto;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.homepage__items-list-elem-goods-item-param {
+    padding: 3px 0;
+    display: table;
+}
+.homepage__items-list-elem-goods-item-param_decremented {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+.homepage__cart-sum_decremented {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+.homepage__cart-list-body-row-cell-inner_decremented {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+.homepage__items-list-elem-goods-item-param_incremented {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+.homepage__cart-sum_incremented {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+.homepage__cart-list-body-row-cell-inner_incremented {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 992px) {
+    .homepage__items-list-elem-goods-item {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+    .homepage__items-list-elem-goods-item-inner {
+        padding: 20px 40px 20px 20px;
+        min-height: 100%;
+    }
+}

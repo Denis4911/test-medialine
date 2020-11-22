@@ -1,0 +1,45 @@
+@import "assets/css/normalize.css";
+
+
+/*Тут располагаются font-face и описывается font-family для body и другие общие стили. Стили пишутся на чистом CSS, потому что препроцессоры не нужны. Пишутся mobile-first*/
+@font-face {
+    font-family: "Gotham Pro";
+    src: url("~@/assets/fonts/GothamPro.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gotham Pro";
+    src: url("~@/assets/fonts/GothamPro-Medium.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gotham Pro";
+    src: url("~@/assets/fonts/GothamPro-Bold.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: "Gotham Pro";
+    font-weight: 300;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
